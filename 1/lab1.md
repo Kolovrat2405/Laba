@@ -38,7 +38,7 @@
 1.  Как создать консольное приложение С++.<br>
 
 Для того чтобы создать консольное приложение C++ нужно зайти в Visual Studio и нажать на вкладку "Создание проекта". Смотреть на рисунок 1.<br>
-![](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)><br/>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)<br/>
 <p align="center">Рис.1 Главная страница
 <br>
 
@@ -75,7 +75,7 @@
 -   Комментирование:  `Ctrl + K | Ctrl + C`
 -   Удаление комментариев:  `Ctrl + K | Ctrl + U`<br>
 
-![](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png)<br/>
+![<p align="center">](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png)<br/>
 <p align="center">Рис. 8. Закомментированный блок кода<br>
 
 1.  Как открыть в проводнике Windows папку с проектом средствами VS.<br>

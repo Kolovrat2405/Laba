@@ -38,35 +38,35 @@
 1.  Как создать консольное приложение С++.<br>
 
 Для того чтобы создать консольное приложение C++ нужно зайти в Visual Studio и нажать на вкладку "Создание проекта". Смотреть на рисунок 1.<br>
-<p align="center" ![](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)><br/>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)><br/>
 <p align="center">Рис.1 Главная страница
 <br>
 
 После нужно было выбрать пункт "Консольное приложение" и нажать "Далее". Это показано на рисунке 2.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)<br/>
-Рис. 2.Консольное приложение <br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/2.png)<br/>
+<p align="center">Рис. 2.Консольное приложение <br>
 
 Далее нужно выбрать имя проекта и его расположение. Это показано на рисунке 3.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/3.png)<br/>
-Рис. 3. Имя и расположение проекта<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/3.png)<br/>
+<p align="center">Рис. 3. Имя и расположение проекта<br>
 
 На данном этапе создание консольного приложения закончено. Консольное приложение показано на рисунке 4.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/4.png)<br/>
-Рис. 4. Консольное приложение<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/4.png)<br/>
+<p align="center">Рис. 4. Консольное приложение<br>
 
 2.  Как изменить цветовую схему (оформление) среды.  
     
 Для начала нужно зайти в меню "Средства", а далее во вкладку "Параметры". Это показано на рисунке 5.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/5.png)<br/>
-Рис. 5. Параметры<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/5.png)<br/>
+<p align="center">Рис. 5. Параметры<br>
 
 После в параметрах "Визуальное представление" нужно было поменять цветовую тему. Это показно на рисунке 6.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/6.png)<br/>
-Рис. 6. Визуальное представление<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/6.png)<br/>
+<p align="center">Рис. 6. Визуальное представление<br>
 
 Измененная цветовая схема на синюю тему показана на рисунке 7.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/7.png)<br/>
-Рис. 7. Цветовая схема<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/7.png)<br/>
+<p align="center">Рис. 7. Цветовая схема<br>
 
 3.  Как закомментировать/раскомментировать блок кода средствами VS.
 
@@ -75,16 +75,16 @@
 -   Комментирование:  `Ctrl + K | Ctrl + C`
 -   Удаление комментариев:  `Ctrl + K | Ctrl + U`<br>
 
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png)<br/>
-Рис. 8. Закомментированный блок кода<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png)<br/>
+<p align="center">Рис. 8. Закомментированный блок кода<br>
 
 1.  Как открыть в проводнике Windows папку с проектом средствами VS.<br>
 
 Для того чтобы открыть в проводнике Windows папку с проектом нужно во вкладке "Файл" выбрать пункт "Открыть" и выбрать "Папка", или использовать комбинацию клавиш "Ctrl+Shift+Alt+O", после нужно будет найти нашу папку. Это показано на рисунке 9.<br>
 
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/9.png)<br/>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/9.png)<br/>
 
-Рис. 9. Открытие папки с проектом<br>
+<p align="center">Рис. 9. Открытие папки с проектом<br>
 
 5.  Какое расширение файла-проекта используется в VS.<br>
 
@@ -93,25 +93,25 @@
 6.  Как запустить код без отладки.<br>
 
 Чтобы запустить код без отладки можно зайти во вкладку "Отладка" и выбрать пункт "Запуск без отладки". Также можно воспользоваться комбинацией клавиш "Ctrl+F5". Это показано на рисунке 10.<br>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/10.png)<br/>
-Рис. 10. Запуск без отладки<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/10.png)<br/>
+<p align="center">Рис. 10. Запуск без отладки<br>
 
 7.  Как запустить код в режиме отладки.
 Для того чтобы запустить код в режиме отладки можно зайти во вкладку "Отладка" и выбрать пункт "Начать отладку". Также можно воспользоваться клавишей "F5". Это показано на рисунке 11.<br>
 
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/11.png)<br/>
-Рис. 11. Запуск в режиме отладки<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/11.png)<br/>
+<p align="center">Рис. 11. Запуск в режиме отладки<br>
 
 8.  Как установить/убрать точку останова (breakpoint)
 Чтобы задать точку останова в коде, щелкнем в крайнем левом поле рядом со строкой кода. Можно также выбрать линию и нажать клавишу F9, выбрать Отладка > Переключить точку остановаили щелкнуть правой кнопкой мыши и выбрать точку останова > Вставить точку останова. Точка останова отображается в виде красной точки в левом поле. Ее также можно убрать нажав клавишу F9. Это показано на рисунке 12.<br>
 
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/12.png)<br/>
-Рис. 12. Точка останова
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/12.png)<br/>
+<p align="center">Рис. 12. Точка останова
 
 9.  Создайте программу со следующим кодом:
  
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/13.png)<br/>
-Рис. 13. Код программы<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/13.png)<br/>
+<p align="center">Рис. 13. Код программы<br>
 
 
 После нужно выполнить такие задание:
@@ -122,29 +122,29 @@
 4.  Какое значение содержит переменная i в 5й строке?
 5.  Какое значение содержит переменная i в 6й строке?
 
-Для того чтобы переключить конфигурациб сборки нужно в панели "Конфигурации решения" поменять сборку на Debug. Это показано на рисунке 14.
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/14.png)<br/>
-Рис. 14. Сбока Debug<br>
+Для того чтобы переключить конфигурациб сборки нужно в панели "Конфигурации решения" поменять сборку на Debug. Это показано на рисунке 14.<br/>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/14.png)<br/>
+<p align="center">Рис. 14. Сбока Debug<br>
 
 После устанавливаем breakpoint на 5 и 6 строках. Это показано на рисунке 15.
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/15.png)<br/>
-Рис. 15. Breakpoint
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/15.png)<br/>
+<p align="center">Рис. 15. Breakpoint
 
 Далее запускаем приложение в режиме отладки и выбираем пункт "Шаг с обходом". Это показано на рисунке 16.
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/16.png)<br/>
-Рис. 16. Шаг с обходом<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/16.png)<br/>
+<p align="center">Рис. 16. Шаг с обходом<br>
 
 Значения переменной i в 5 и 6 строках показаны на рисунке 17.
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/17.png)<br/>
-Рис. 17. Переменная i
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/17.png)<br/>
+<p align="center">Рис. 17. Переменная i
 
 10.  Выполните задание 9 изменив программу на следующую:<br/>
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/18.png)<br/>
-Рис. 18. Код программы
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/18.png)<br/>
+<p align="center">Рис. 18. Код программы
 
 Значения переменной i в 5 и 6 строках показаны на рисунке 19.
-![1](https://github.com/Kolovrat2405/Laba/blob/master/1/19.png)<br/>
-Рис. 19. Переменная i<br>
+![](https://github.com/Kolovrat2405/Laba/blob/master/1/19.png)<br/>
+<p align="center">Рис. 19. Переменная i<br>
 
 
 **Вывод:** Лабораторная работа выполнена в подном объёме. Изучил основные возможности создания и отладки программ в IDE MS Visual Studio.

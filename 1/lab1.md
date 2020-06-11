@@ -75,7 +75,7 @@
 -   Комментирование:  `Ctrl + K | Ctrl + C`
 -   Удаление комментариев:  `Ctrl + K | Ctrl + U`<br>
 
-<p align="center">(![](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png))<br/>
+<p align="center"![](https://github.com/Kolovrat2405/Laba/blob/master/1/8.png)><br/>
 <p align="center">Рис. 8. Закомментированный блок кода<br>
 
 1.  Как открыть в проводнике Windows папку с проектом средствами VS.<br>

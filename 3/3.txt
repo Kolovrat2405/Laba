@@ -1,0 +1,107 @@
+﻿<p align="center">МИНИСТЕРСТВО НАУКИ  И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
+Федеральное государственное автономное образовательное учреждение высшего образования<br>
+"КРЫМСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ им. В. И. ВЕРНАДСКОГО"<br>
+ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ<br>
+Кафедра компьютерной инженерии и моделирования</p>
+<br>
+<h3 align="center">Отчёт по лабораторной работе № 1<br> по дисциплине "Программирование"</h3>
+<br><br>
+<p>студента 1 курса группы ИВТ-б-о-192(1)<br>
+Цыганков Андрей Алексеевич<br>
+направления подготовки 09.03.01 "Информатика и вычислительная техника"</p>
+<br><br>
+<table>
+<tr><td>Научный руководитель<br> старший преподаватель кафедры<br> компьютерной инженерии и моделирования</td>
+<td>(оценка)</td>
+<td>Чабанов В.В.</td>
+</tr>
+</table>
+<br><br>
+<p align="center">Симферополь, 2020</p>
+<hr>
+
+**Цель:**  <br> 1. Закрепить навыки разработки программ использующих операторы цикла;<br>
+2. Закрепить навыки разработки программ использующих массивы;<br>
+3. Освоить методы подключения сторонних библиотек.<br>
+
+**Ход работы:**
+1. В соответствии с вашим вариантом выберите из таблице 1 ссылку на картинку и ключ. Номер варианта соответствует номеру в журнале академической группы. Картинка весит около 1 МБ.
+
+2. Декодируйте сообщение и выведите его в консоль.
+![](https://github.com/Kolovrat2405/Laba/blob/master/2/1.jpg)<br/>
+Рис.1 Изображение для дешифровки
+
+3. Ключ: ```11b 11g 11r 01b 01g 01r 10b 10g```
+
+
+Код программы:
+```
+#include <iostream>
+#include "libbmp.h"
+#include <string>
+using namespace std;
+
+enum Channel {
+	RED,
+	GREEN,
+	BLUE
+};
+
+int binary_to_int(string t){
+	int result = (int)(t[0] - 48) * 128 + (int)(t[1] - 48) * 64 +
+		(int)(t[2] - 48) * 32 + (int)(t[3] - 48) * 16 +
+		(int)(t[4] - 48) * 8 + (int)(t[5] - 48) * 4 +
+		(int)(t[6] - 48) * 2 + (int)(t[7] - 48);
+	return result;
+}
+
+bool check(string* temp) {
+	if (temp->size() == 8) {
+		if ((char)binary_to_int(*temp) == '\0') return false;
+		cout << (char)binary_to_int(*temp);
+		*temp = "";
+	}
+	return true;
+}
+
+bool getChar(BmpImg* img, int x, int y, string* temp, Channel channel ) {
+	switch (channel){
+	case RED: 
+		*temp += ((int)img->red_at(x, y)) % 2 + 48;
+		break;
+	case GREEN: 
+		*temp += ((int)img->green_at(x, y)) % 2 + 48;
+		break;
+	case BLUE: 
+		*temp += ((int)img->blue_at(x, y)) % 2 + 48;
+		break;
+	}
+	if (!check(temp)) return false;
+	return true;
+}
+
+
+int main(){
+	setlocale(LC_ALL, "rus");
+	BmpImg img;
+	img.read("pic9.bmp");
+	string temp = "";
+
+	for (int i = 0; i < img.get_height(); i++) {         
+		for (int j = 0; j < img.get_width(); j++) {   
+			if (!getChar(&img, j, i, &temp, RED)) return 0;
+			if (!getChar(&img, j, i, &temp, GREEN)) return 1;
+			if (!getChar(&img, j, i, &temp, BLUE)) return 2;
+		}
+	}
+
+	return 3;
+}
+```
+**Декодированное сообщение:**
+```
+John Tyler (June 11, 1790 - April 28, 1862) [1] was the tenth president of the United States from 1841 to 1845 after b riefly serving as the tenth vice president in 1841; he was elected to the latter office on the 1840 Whig ticket with Pre sident William Henry Harrison. Тyler ascended to the presidency after Harrison's death in April 1841, only a month after the start of the new administration. He was a stalwart supporter and advocate of states" rights, and as president he ad opted nationalist policies only when they did not infringe on the powers of the states. His unexpected rise to the presi dency, with the resulting threat to the presidential ambitions of Henry Clay and other politicians, left him estranged f гom both major political parties.
+Тyler, born to a prominent Vvirginia family, became a national figure at a time of political upheaval. In the 1820s the n ation's only pоlitical party, the Democratic-Republicans, split into factions. He was initially a Democrat, but opposed Andrew Jackson during the Nullification Crisis, seeing Jackson's actions as infringing upon states' rights, and criticiz ed Jackson's еxpansion of exеcutive power during the Bank War. This led Tyler to ally with the Whig Party. Tyler served as a Virginia state legislator, governor, U.S. representative, and U.S. senator. Hе was put on the 1840 presidential tic ket to attract states" rights Southerners to a Whig сoalition to defeat Martin Van Buren's re-election bid. with Harrison's death after just one month in office, Tyler became the first vice president to succeed to the presidency without election. He served longer than any president in U.S. history not elected to the office. To forestall constitut ional uncertainty, Tyler immediately took the oath of office, moved into the White House, and assumed full presidential ромers, a prеcedent that governed future successions and was codified in the Twenty-fifth Amendment. While Tyler did sig n into law somе of the Whig-controlled Congress's bills, as a strict constructionist he vetoed the party's bills tо crea te a national bank and raise the tariff rates. Believing that the president should set policy rather than Сongress, he s ought to bypass the Whig establishment, most notably senator Henry Clay of Kentucky. Most of Tyler's Cabinet resigned so on into his term, and the Whigs, dubbing him His Accidency, eхpelled him froт the party. Tyler was the first president t o see his veto of legislation overridden by Congress. Although he faced a stalemate on domestic policy, he had several f oreign-policy achievements, including the Webster-Ashburton Treaty with Britain and the Treaty of Wanghia with Qing Chin. 
+The Republic of Texas separated from Mexico in 1836;B Тyler, a firm believer in manifest destiny, saw its annexation as p гoviding an econonic advantagе to the United States, and worked diligently to make it happen. He initially sought electi on to a full term as president, but after failing to gain the support of either Whigs or Democrats, he withdrew in suppo rt of Democrat Janes K. Polk, who favored annехation. Polk won the election, and Tyler signeеd a bill to annex Texas thre e days before leaving office. Under Polk, the process was сompleted. When the American civil War began in 1861, Tyler si ded with thе Confederacy and won election to the Confederate House of Representatives shortly before his death. Although some have praised Tyler's political resolve, his presidencсу is generally held in low regard by historians. He is consid ered an obscure president, with 1ittle presence in American cultural memory.Для продолжения нажмите любую клавишу...
+```
+**Вывод:** в ходе лабораторной работы закрепил навыки разработки программ использующих операторы цикла, закрепил навыки разработки программ использующих массивы, освоил методы подключения сторонних библиотек.
